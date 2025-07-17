@@ -39,7 +39,7 @@ impl From<Vec<UserKeyMapping>> for KeyMapping {
 fn main() {
     let args: Vec<String> = std::env::args().collect();
 
-    if args.len() < 2 {
+    if args.len() != 2 {
         panic!("map or none as argument")
     }
 
