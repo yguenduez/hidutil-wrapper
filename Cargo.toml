@@ -5,6 +5,7 @@ edition = "2024"
 license = "MIT"
 readme = "readme.md"
 description = "A small hidutil wrapper to exchange tab and capslock keys"
+keywords = ["hidutil", "keyboard"]
 
 [dependencies]
 serde = { version = "1.0.219", features = ["derive"] }
