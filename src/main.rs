@@ -1,9 +1,29 @@
-/*
-hidutil property --set '{"UserKeyMapping":[
-  {"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x70000002B},
-  {"HIDKeyboardModifierMappingSrc":0x70000002B,"HIDKeyboardModifierMappingDst":0x700000039}
-]}'
- */
+//! This is the original command needed to map the keys
+//!
+//! ```json
+//! hidutil property --set '{"UserKeyMapping":[
+//!   {"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x70000002B},
+//!   {"HIDKeyboardModifierMappingSrc":0x70000002B,"HIDKeyboardModifierMappingDst":0x700000039}
+//! ]}'
+//! ```
+//!
+//! # Install it locally
+//!
+//! ```sh
+//! cargo install --path .
+//! ```
+//!
+//! # Using it
+//!
+//! ```sh
+//! hidutil-wrapper map
+//! ```
+//!
+//! To switch capslock with tab and to undo it
+//!
+//! ```sh
+//! hidutil-wrapper undo
+//! ```
 
 #[derive(serde::Deserialize, serde::Serialize)]
 struct UserKeyMapping {
