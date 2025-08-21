@@ -12,9 +12,9 @@ cargo install --path .
 Then map, to map it and none, to undo it
 
 ```sh
-key_remap map
+hidutil-wrapper map
 ```
 
 ```sh
-key_remap none
+hidutil-wrapper none
 ```
